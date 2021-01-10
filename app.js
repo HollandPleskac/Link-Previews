@@ -12,7 +12,6 @@ app.post('/', async function (request, response) {
 
   const body = request.body;
   const data = await scrapeMetatags(body.text);
-  console.log(data);
   response.json({ 'data': data });
 
 });
