@@ -1,5 +1,3 @@
-const cors = require('cors')({ origin: true }); // origin:true gives any url access to the endpoint
-
 const cheerio = require('cheerio');
 const getUrls = require('get-urls');
 const fetch = require('node-fetch');
@@ -39,7 +37,6 @@ const scrapeMetatags = (text) => {
   return Promise.all(requests); // run all requests concurrently 
 
 }
-
 
 module.exports = scrapeMetatags;
 
