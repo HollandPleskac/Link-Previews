@@ -30,6 +30,7 @@ const scrapeMetatags = (text) => {
       description: getMetatag('description'),
       image: getMetatag('image'),
       author: getMetatag('author'),
+      themeColor: getMetatag('theme-color')
     }
 
   });
